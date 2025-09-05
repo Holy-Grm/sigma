@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel"
 import { ImageWithFallback } from "./figma/ImageWithFallback"
 import { ExternalLink, Github } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // Import des images locales
 import img_masterexcel from '../img/img_masterexcel.jpg'
@@ -17,6 +17,28 @@ import img_structuresdonnees from '../img/img_structuresdonnees.jpg'
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null)
+  const [api, setApi] = useState()
+  const [current, setCurrent] = useState(0)
+
+  // Auto-scroll effect
+  useEffect(() => {
+    if (!api) return
+
+    const intervalId = setInterval(() => {
+      api.scrollNext()
+    }, 5000) // 5 seconds
+
+    return () => clearInterval(intervalId)
+  }, [api])
+
+  // Track current slide
+  useEffect(() => {
+    if (!api) return
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap())
+    })
+  }, [api])
 
   const projects = [
     {
@@ -84,9 +106,17 @@ export function Projects() {
           </p>
         </div>
 
-        {/* Horizontal Carousel with Vertical Cards */}
-        <div className="relative">
-          <Carousel className="w-full">
+        {/* Horizontal Carousel with Auto-scroll */}
+        <div className="relative w-full">
+          <Carousel 
+            className="w-full"
+            setApi={setApi}
+            opts={{
+              align: "center",
+              loop: true,
+              skipSnaps: false,
+            }}
+          >
             <CarouselContent className="-ml-2 md:-ml-4">
               {projects.map((project, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
@@ -123,6 +153,7 @@ export function Projects() {
                         </div>
                       </div>
                     </DialogTrigger>
+
                     
                     <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
                       <DialogHeader>
@@ -171,6 +202,19 @@ export function Projects() {
             <CarouselPrevious className="left-4" />
             <CarouselNext className="right-4" />
           </Carousel>
+          
+          {/* Progress indicators */}
+          <div className="flex justify-center mt-6 gap-2">
+            {projects.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => api?.scrollTo(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  current === index ? 'bg-primary w-8' : 'bg-primary/30 hover:bg-primary/50'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
