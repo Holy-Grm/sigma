@@ -5,6 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
+    base: "/sigma/", // ✅ obligatoire pour GitHub Pages (ton repo s'appelle "sigma")
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -51,7 +52,7 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist', // aciennement build
     },
     server: {
       port: 3000,
