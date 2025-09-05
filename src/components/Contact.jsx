@@ -34,21 +34,26 @@ export function Contact() {
       icon: Mail,
       title: "Courriel",
       content: "oligermain15@gmail.com",
-      description: "Écrivez-moi"
+      description: "Écrivez-moi",
+      link: "mailto:oligermain15@gmail.com?subject=Information&body=Bonjour%20Olivier,%0D%0AJe%20souhaite%20te%20contacter%20concernant%20...",
+      isClickable: true
     },
 
     {
       icon: Linkedin,
       title: "Linkedin",
       content: "www.linkedin.com/in/oligermain",
-      description: "Connectons-nous"
+      description: "Connectons-nous",
+      link: "https://www.linkedin.com/in/oligermain",
+      isClickable: true
     },
 
     {
       icon: MapPin,
       title: "Ville",
-    content: "Sherbrooke, Qc",
-      description: "Disponible en personne et à distance"
+      content: "Sherbrooke, Qc",
+      description: "Disponible en personne et à distance",
+      isClickable: false
     }
   ]
 
@@ -142,18 +147,40 @@ export function Contact() {
             <div className="space-y-6">
               {contactInfo.map((info, index) => {
                 const Icon = info.icon
-                return (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <Icon className="h-6 w-6 text-primary" />
+                
+                if (info.isClickable) {
+                  return (
+                    <a 
+                      key={index} 
+                      href={info.link}
+                      target={info.title === "Linkedin" ? "_blank" : "_self"}
+                      rel={info.title === "Linkedin" ? "noopener noreferrer" : undefined}
+                      className="flex items-start gap-4 p-4 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-200 group cursor-pointer"
+                    >
+                      <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary/20 transition-colors">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="mb-1 group-hover:text-primary transition-colors">{info.title}</h4>
+                        <p className="font-medium mb-1">{info.content}</p>
+                        <p className="text-sm text-muted-foreground">{info.description}</p>
+                      </div>
+                    </a>
+                  )
+                } else {
+                  return (
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="bg-primary/10 p-3 rounded-lg">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="mb-1">{info.title}</h4>
+                        <p className="font-medium mb-1">{info.content}</p>
+                        <p className="text-sm text-muted-foreground">{info.description}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="mb-1">{info.title}</h4>
-                      <p className="font-medium mb-1">{info.content}</p>
-                      <p className="text-sm text-muted-foreground">{info.description}</p>
-                    </div>
-                  </div>
-                )
+                  )
+                }
               })}
             </div>
 

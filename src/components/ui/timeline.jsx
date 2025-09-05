@@ -127,6 +127,17 @@ export function Timeline({ items, className }) {
     return () => observer.disconnect()
   }, [])
 
+  // Scroll to the right (most recent events) on mount
+  useEffect(() => {
+    const container = containerRef.current
+    if (container) {
+      // Small delay to ensure content is rendered
+      setTimeout(() => {
+        container.scrollLeft = container.scrollWidth - container.clientWidth
+      }, 100)
+    }
+  }, []) // Empty dependency array - only runs once on mount
+
   // Navigation functions
   const scrollLeft = () => {
     if (containerRef.current) {
@@ -167,15 +178,8 @@ export function Timeline({ items, className }) {
           </button>
         </div>
 
-        {/* Progress indicator */}
-        <div className="absolute top-4 right-4 z-20 text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border border-border/50">
-          {Math.round(scrollProgress * 100)}%
-        </div>
 
-        {/* Drag hint */}
-        <div className="absolute top-4 left-4 z-20 text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border border-border/50">
-          {isDragging ? 'Glissement...' : 'Cliquez et glissez →'}
-        </div>
+
 
         {/* Horizontal timeline container - WITH drag-to-scroll */}
         <div 
@@ -183,10 +187,10 @@ export function Timeline({ items, className }) {
           className="flex-1 overflow-x-auto scrollbar-thin scrollbar-thumb-primary/20 scrollbar-track-transparent pb-4 select-none"
           style={{
             scrollbarWidth: 'thin',
-            scrollbarColor: 'hsl(var(--primary) / 0.2) transparent'
+            scrollbarColor: 'hsl(var(--primary) / 0.1) transparent'
           }}
         >
-          <div className="flex items-center h-full min-w-max px-8 gap-6">
+          <div className="flex items-start h-full min-w-max px-8 gap-6">
             {/* Timeline line */}
             <div className="absolute bottom-8 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent pointer-events-none" />
             

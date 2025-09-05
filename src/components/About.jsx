@@ -28,6 +28,13 @@ export function About() {
   ]
 
   const timelineItems = [
+      {
+      date: "Hiver 2026",
+      title: "À la recherche d'un stage",
+      subtitle: "",
+      description: "Dates suggérées : du 5 janvier au 17 avril",
+      type: "travail"
+    },
     {
       date: "2024 - 2027",
       title: "Université de Sherbrooke",
@@ -135,17 +142,7 @@ export function About() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-border">
-          <div className="text-center">
-            <div className="text-3xl font-semibold text-primary mb-2">10+</div>
-            <div className="text-sm text-muted-foreground">Projets completés</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-semibold text-primary mb-2">25+</div>
-            <div className="text-sm text-muted-foreground">Utilisateurs heureux</div>
-          </div>
-        </div>
+
       </div>
     </section>
   )
