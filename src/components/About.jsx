@@ -6,23 +6,23 @@ export function About() {
   const highlights = [
     {
       icon: Code,
-      title: "Clean Code...jsx",
-      description: "Writing maintainable, scalable, and efficient code"
+      title: "Code",
+      description: "Programation propre et maintenable"
     },
     {
       icon: Palette,
-      title: "Creative Design",
-      description: "Crafting beautiful and intuitive user interfaces"
+      title: "Design Créatif",
+      description: "Conception d'interfaces soignées et intuitives"
     },
     {
       icon: Zap,
-      title: "Fast Performance",
-      description: "Optimizing for speed and user experience"
+      title: "Efficacité",
+      description: "Optimisation et rapidité du travail"
     },
     {
       icon: Users,
-      title: "Team Player",
-      description: "Collaborating effectively with cross-functional teams"
+      title: "Travail d'équipe",
+      description: "Collaboration efficace avec des équipes multidisciplinaires"
     }
   ]
 
@@ -32,33 +32,27 @@ export function About() {
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">About Me</Badge>
           <h2 className="mb-6">
-            Passionate Developer with a Vision
+            Passionné par le futur
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm a full-stack developer and designer based in San Francisco. I specialize in 
-            creating digital experiences that are not only visually appealing but also highly 
-            functional and user-friendly.
+            
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h3 className="mb-6">My Journey</h3>
+            <h3 className="mb-6">Mon parcours</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                My passion for technology started early when I built my first website at age 16. 
-                Since then, I've been constantly learning and evolving with the ever-changing 
-                landscape of web development.
+                Ma passion pour la technologie a débuté dès mon jeune âge, par plaisir 
+                d'automatiser tout ce qui m'entoure. À commencer par les jeux vidéos, puis la 
+                domotique et finalement des tâches complexes au travail.
               </p>
               <p>
-                I hold a Computer Science degree from Stanford University and have worked with 
-                startups and Fortune 500 companies, helping them achieve their digital goals 
-                through innovative solutions.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or hiking in the beautiful California mountains.
+                J'approfondis actuellement mes connaissances à l'Université de Sherbrooke 
+                réputée pour son programme coopératif. Ceci me permet d'acquérir une 
+                expérience précieuse en travaillant sur des projets réels dans divers secteurs.
               </p>
             </div>
           </div>
@@ -87,20 +81,12 @@ export function About() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-border">
           <div className="text-center">
-            <div className="text-3xl font-semibold text-primary mb-2">50+</div>
-            <div className="text-sm text-muted-foreground">Projects Completed</div>
+            <div className="text-3xl font-semibold text-primary mb-2">10+</div>
+            <div className="text-sm text-muted-foreground">Projets completés</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-semibold text-primary mb-2">25+</div>
-            <div className="text-sm text-muted-foreground">Happy Clients</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-semibold text-primary mb-2">5+</div>
-            <div className="text-sm text-muted-foreground">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-semibold text-primary mb-2">100%</div>
-            <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+            <div className="text-sm text-muted-foreground">Utilisateurs heureux</div>
           </div>
         </div>
       </div>
