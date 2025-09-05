@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
+import { Mail, MapPin, Phone, Send, Linkedin } from "lucide-react"
 import { useState } from "react"
 
 export function Contact() {
@@ -17,8 +17,8 @@ export function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     // In a real application, you would send this data to your backend
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I\'ll get back to you soon.')
+    console.log('Form envoyé:', formData)
+    alert('Merci pour votre message! Je vous répondrai sous peu.')
     setFormData({ name: '', email: '', subject: '', message: '' })
   }
 
@@ -32,21 +32,23 @@ export function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Email",
-      content: "john.doe@example.com",
-      description: "Send me an email anytime!"
+      title: "Courriel",
+      content: "oligermain15@gmail.com",
+      description: "Écrivez-moi"
     },
+
     {
-      icon: Phone,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      description: "Mon-Fri from 9am to 6pm PST"
+      icon: Linkedin,
+      title: "Linkedin",
+      content: "www.linkedin.com/in/oligermain",
+      description: "Connectons-nous"
     },
+
     {
       icon: MapPin,
-      title: "Location",
-      content: "San Francisco, CA",
-      description: "Available for remote work worldwide"
+      title: "Ville",
+    content: "Sherbrooke, Qc",
+      description: "Disponible en personne et à distance"
     }
   ]
 
@@ -54,13 +56,12 @@ export function Contact() {
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">Get In Touch</Badge>
+          <Badge variant="outline" className="mb-4">Contactez moi</Badge>
           <h2 className="mb-6">
-            Let's Work Together
+            Travaillons ensemble
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Send me a message and 
-            let's discuss how we can bring your ideas to life.
+            Vous avez un projet en tête ou simplement envie de discuter? N'hésitez pas à me contacter!
           </p>
         </div>
 
@@ -68,42 +69,42 @@ export function Contact() {
           {/* Contact Form */}
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
-              <h3 className="mb-6">Send me a message</h3>
+              <h3 className="mb-6">Envoyez moi un message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block mb-2">Name</label>
+                    <label htmlFor="name" className="block mb-2">Nom</label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Your full name"
+                      placeholder="Nom complet"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block mb-2">Email</label>
+                    <label htmlFor="Courriel" className="block mb-2">Email</label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="your.email@example.com"
+                      placeholder="votre.courriel@exemple.com"
                       required
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <label htmlFor="subject" className="block mb-2">Subject</label>
+                  <label htmlFor="subject" className="block mb-2">Sujet</label>
                   <Input
                     id="subject"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="What's this about?"
+                    placeholder="À propos de..."
                     required
                   />
                 </div>
@@ -115,7 +116,7 @@ export function Contact() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell me about your project..."
+                    placeholder="J'aimerais en connaitre davantage..."
                     rows={5}
                     required
                   />
@@ -123,7 +124,7 @@ export function Contact() {
                 
                 <Button type="submit" size="lg" className="w-full">
                   <Send className="h-4 w-4 mr-2" />
-                  Send Message
+                  Envoyer
                 </Button>
               </form>
             </CardContent>
@@ -132,11 +133,9 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="mb-6">Let's connect</h3>
+              <h3 className="mb-6">Contact</h3>
               <p className="text-muted-foreground mb-8">
-                I'm always interested in new opportunities and collaborations. 
-                Whether you have a project in mind or just want to chat about 
-                technology, feel free to reach out!
+                Je suis toujours intéressé a discuter d'oppotunité de collaboration. Peu importe le sujet en tête écrivez moi.
               </p>
             </div>
 
@@ -158,13 +157,6 @@ export function Contact() {
               })}
             </div>
 
-            <div className="pt-8 border-t border-border">
-              <h4 className="mb-4">Response Time</h4>
-              <p className="text-muted-foreground">
-                I typically respond to messages within 24 hours. For urgent inquiries, 
-                please call or send an email with "URGENT" in the subject line.
-              </p>
-            </div>
           </div>
         </div>
       </div>

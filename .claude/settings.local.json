@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:holy-grm.github.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

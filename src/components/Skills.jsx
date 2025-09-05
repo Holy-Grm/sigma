@@ -2,9 +2,8 @@ import { Badge } from "./ui/badge"
 
 export function Skills() {
   const technologies = [
-    "React", "C++", "C#","JavaScript", "HTML", "Python", "PostgreSQL", 
-    "CSS", "Assembly", "Figma", "Github", "Excel", "VBA", 
-    "Java", "SQL", "Snowflake", "SAP"
+    "C++", "C#","Java", "Python", "Assembly", "HTML","CSS", "JavaScript", "React", "PostgreSQL",  "Figma", "Github", "Excel", "VBA", 
+     "SQL", "Snowflake", "SAP"
   ]
 
   return (
