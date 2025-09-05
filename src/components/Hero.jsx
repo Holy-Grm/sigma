@@ -22,14 +22,16 @@ export function Hero() {
                 Bienvenue sur mon portfolio
               </span>
               <h1 className="mb-4">
-                Bonjour, je m'appelle Olivier
+                  Science des données | Intelligence artificielle | Cybersécurité
+
               </h1>
-              <h2 className="text-muted-foreground mb-6">
-                Science des données | Intelligence Artificielle | Cybersécurité
+              <h2 className="text-muted-foreground">
+                  Bonjour, je m'appelle Olivier !
+
               </h2>
               <p className="text-muted-foreground mb-8 max-w-lg">
-                Je suis étudiant au Baccalauréat en sciences à l'Université de Sherbrooke 
-                en Informatique de Gestion, programme coopératif.
+                Je suis étudiant au baccalauréat en sciences à l'Université de Sherbrooke 
+                en informatique de gestion, programme coopératif.
 
               </p>
             </div>

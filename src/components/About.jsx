@@ -46,14 +46,14 @@ export function About() {
       date: "Été 2025",
       title: "BRP",
       subtitle: "Stagiaire aux processus et technologies d'exécution",
-      description: "Développement de solutions d'analyse de données pour l'optimisation manufacturière",
+      description: "Développement de solutions d'analyse de données pour l'optimisation manufacturière.",
       type: "travail"
     },
     {
       date: "2022 - Aujourd'hui",
       title: "Ville de Sherbrooke",
       subtitle: "Répartiteur 911",
-      description: "Répartition d'urgence 911, police et incendie",
+      description: "Répartition d'urgence 911, police et incendie.",
       type: "travail"
     },
     {
@@ -73,7 +73,7 @@ export function About() {
     {
       date: "2012 - 2018",
       title: "Service en restauration",
-      subtitle: "Emplois étudiants de service en restauration",
+      subtitle: "Emploi étudiant de service en restauration",
       description: "Service à la clientèle",
       type: "travail"
     }
@@ -98,12 +98,12 @@ export function About() {
             <h3 className="mb-6">Mon parcours</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Ma passion pour la technologie a débuté dès mon jeune âge, par plaisir 
+                Ma passion pour la technologie a débutée dès mon jeune âge, par plaisir 
                 d'automatiser tout ce qui m'entoure. À commencer par les jeux vidéos, puis la 
                 domotique et finalement des tâches complexes au travail.
               </p>
               <p>
-                J'approfondis actuellement mes connaissances à l'Université de Sherbrooke 
+                J'approfondis présentement mes connaissances à l'Université de Sherbrooke, 
                 réputée pour son programme coopératif. Ceci me permet d'acquérir une 
                 expérience précieuse en travaillant sur des projets réels dans divers secteurs.
               </p>

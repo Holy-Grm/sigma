@@ -29,9 +29,6 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-primary">

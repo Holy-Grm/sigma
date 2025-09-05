@@ -44,47 +44,47 @@ export function Projects() {
     {
       title: "Master Excel",
       description: "Développement de projets avancés impliquant la consolidation de plus de 25 fichiers Excel avec tableaux de bord dynamiques et analyses automatisées.",
-      detailedDescription: "Ce projet consistait à consolider et analyser des données provenant de multiples sources Excel. J'ai créé des tableaux de bord interactifs avec des graphiques dynamiques, des tableaux croisés dynamiques avancés, et des systèmes d'analyse automatisée pour optimiser les processus de reporting.",
+      detailedDescription: "Ce projet consistait à consolider et analyser des données provenant de multiples sources Excel. J'ai créé des tableaux de bord interactifs avec des graphiques dynamiques, des tableaux croisés dynamiques avancés et des systèmes d'analyse automatisés pour optimiser les processus de reporting.",
       image: img_masterexcel,
       technologies: ["Tableaux croisés dynamiques", "Dashboards", "VBA"]
     },
     {
-      title: "Automation Visuelle",
+      title: "Automatisation visuelle",
       description: "Transforme les données CSV/Excel en graphiques visuels pour la chaîne de production d'usine avec génération automatique de diagrammes.",
-      detailedDescription: "Application qui automatise la transformation de données de production en visualisations graphiques. Utilise Graphviz pour générer des diagrammes de flux de production en temps réel, permettant aux gestionnaires d'usine de visualiser instantanément le déroulement d'une chaîne de production.",
+      detailedDescription: "Application qui automatise la transformation de données de production en visualisations graphiques. J'ai utilisé Graphviz pour générer des diagrammes de flux de production en temps réel, permettant aux gestionnaires d'usine de visualiser instantanément le déroulement d'une chaîne de production.",
       image: img_automatisationvisuelle,
       technologies: ["HTML", "CSS", "Graphviz DOT", "JavaScript"]
     },
     {
       title: "Excel VBA",
       description: "Développement d'outils Excel automatisés avec interface utilisateur intégrée pour la sélection dynamique de fichiers et le traitement de données.",
-      detailedDescription: "Suite d'outils VBA avancés avec interfaces utilisateur personnalisées. Inclut des systèmes de sélection de fichiers dynamiques, des macros d'automatisation de processus répétitifs, et l'intégration avec Python pour les analyses de données complexes.",
+      detailedDescription: "Suite d'outils VBA avancés avec interfaces utilisateur personnalisées. Inclut des systèmes de sélection de fichiers dynamiques, des macros d'automatisation de processus répétitifs et l'intégration avec Python pour les analyses de données complexes.",
       image: img_excelvba,
       technologies: ["VBA", "Automation"]
     },
     {
       title: "PixelBot",
-      description: "Automatise les tâches visuelles répétitives grâce à la reconnaissance d'images en temps réel avec système de raccourcis clavier personnalisés.",
+      description: "Automatise les tâches visuelles répétitives grâce à la reconnaissance d'images en temps réel avec des raccourcis clavier personnalisés.",
       detailedDescription: "Bot d'automatisation avancé utilisant la reconnaissance d'images pour automatiser des tâches répétitives sur ordinateur. Système de configuration JSON flexible, détection d'images en temps réel, et intégration de raccourcis clavier personnalisés pour une utilisation optimale.",
       image: img_pixelbot,
       technologies: ["Python", "Automatisation", "JSON"]
     },
     {
       title: "Solveur de Sudoku",
-      description: "Algorithme de résolution de Sudoku développé comme projet universitaire avec optimisations de performance avancées.",
-      detailedDescription: "Implémentation d'un algorithme de résolution de Sudoku optimisé en C++. Utilise des techniques de backtracking avec optimisations heuristiques, capable de résoudre des grilles de difficulté variable en temps optimal. Projet développé dans le cadre de cours d'algorithmes avancés.",
+      description: "Algorithme de résolution de Sudoku développé comme projet universitaire.",
+      detailedDescription: "Implémentation d'un algorithme de résolution de Sudoku optimisé en C++. J'ai utilisé des techniques de backtracking avec optimisations heuristiques, capable de résoudre des grilles de difficulté variable en temps optimal. Projet développé dans le cadre de cours d'algorithmes avancés.",
       image: img_solveursudoku,
       technologies: ["C++", "Algorithmes", "Projet Universitaire"]
     },
     {
-      title: "Base de Données Relationnelle",
+      title: "Base de données relationnelle",
       description: "Conception et implémentation d'une base de données relationnelle complète pour une chaîne de restaurants avec optimisations de performance.",
-      detailedDescription: "Projet complet de conception de base de données pour une chaîne de restaurants. Inclut la modélisation UML complète, l'implémentation PostgreSQL avec contraintes d'intégrité, les procédures stockées, et l'optimisation des requêtes pour de gros volumes de données.",
+      detailedDescription: "Projet complet de conception de base de données pour une chaîne de restaurants. Inclut la modélisation UML complète, l'implémentation PostgreSQL avec contraintes d'intégrité, les procédures stockées et l'optimisation des requêtes pour de gros volumes de données.",
       image: img_basededonnees,
       technologies: ["PostgreSQL", "UML", "SQL"]
     },
     {
-      title: "Structures de Données Avancées",
+      title: "Structures de données avancées",
       description: "Implémentation complète de structures de données complexes from scratch incluant des optimisations de performance personnalisées.",
       detailedDescription: "Implémentation from scratch de structures de données avancées en C++: deques double-ended, skip lists avec probabilités optimisées, arbres binaires de recherche équilibrés. Chaque structure inclut des tests de performance et des optimisations mémoire spécifiques.",
       image: img_structuresdonnees,
@@ -96,13 +96,13 @@ export function Projects() {
     <section id="projects" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">Mes Réalisations</Badge>
+          <Badge variant="outline" className="mb-4">Mes réalisations</Badge>
           <h2 className="mb-6">
             Projets dont je suis fier
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Voici quelques-uns de mes projets récents qui démontrent mes compétences en développement, 
-            analyse de données et résolution de problèmes.
+            en analyse de données et en résolution de problèmes.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ export function Contact() {
       title: "Courriel",
       content: "oligermain15@gmail.com",
       description: "Écrivez-moi",
-      link: "mailto:oligermain15@gmail.com?subject=Information&body=Bonjour%20Olivier,%0D%0AJe%20souhaite%20te%20contacter%20concernant%20...",
+      link: "mailto:oligermain15@gmail.com",
       isClickable: true
     },
 
@@ -40,7 +40,7 @@ export function Contact() {
             Travaillons ensemble
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Vous avez un projet en tête ou simplement envie de discuter? N'hésitez pas à me contacter!
+            Vous avez un projet en tête ou simplement envie de discuter ? N'hésitez pas à me contacter !
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export function Contact() {
             <div>
               <h3 className="mb-6">Contact</h3>
               <p className="text-muted-foreground mb-8">
-                Je suis toujours intéressé à discuter d'oppotunité de collaboration. Peu importe le sujet en tête écrivez moi.
+                Je suis toujours intéressé à discuter d'oppotunité de collaboration. Peu importe le sujet que vous avez en tête écrivez-moi.
               </p>
             </div>
 
