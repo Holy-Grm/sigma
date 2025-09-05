@@ -23,10 +23,9 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand & Description */}
           <div className="md:col-span-2">
-            <h3 className="mb-4">John Doe</h3>
+            <h3 className="mb-4">Olivier Germain</h3>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Full-stack developer and designer passionate about creating 
-              beautiful, functional digital experiences that make a difference.
+              Étudiant B.Sc. Informatique de gestion
             </p>
             <div className="flex gap-3">
               <Button variant="ghost" size="icon" className="hover:text-primary">
@@ -36,9 +35,6 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
@@ -46,43 +42,37 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4">Quick Links</h4>
+            <h4 className="mb-4">Liens</h4>
             <div className="space-y-3">
               <button 
                 onClick={() => scrollToSection('about')}
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
-                About
+                À propos
               </button>
               <button 
                 onClick={() => scrollToSection('skills')}
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
-                Skills
+                Compétences
               </button>
               <button 
                 onClick={() => scrollToSection('projects')}
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
-                Projects
+                Projets
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
-                Contact
-              </button>
+
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="mb-4">Services</h4>
+            <h4 className="mb-4">Intérêts</h4>
             <div className="space-y-3 text-muted-foreground">
-              <div>Web Development</div>
-              <div>Mobile Apps</div>
-              <div>UI/UX Design</div>
-              <div>Consulting</div>
+              <div>Data Science</div>
+              <div>Intelligence artificielle</div>
+              <div>Cybersécurité</div>
             </div>
           </div>
         </div>
@@ -92,12 +82,9 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-muted-foreground text-sm">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Olivier Germain. Tout droit réversé.
           </div>
           
-          <div className="flex items-center gap-1 text-muted-foreground text-sm">
-            Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> using React & Tailwind CSS
-          </div>
           
           <Button 
             variant="ghost" 
@@ -105,7 +92,7 @@ export function Footer() {
             onClick={scrollToTop}
             className="hover:text-primary"
           >
-            Back to top ↑
+            Retour en haut ↑
           </Button>
         </div>
       </div>

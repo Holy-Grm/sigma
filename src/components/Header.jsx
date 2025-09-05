@@ -26,19 +26,19 @@ export function Header() {
             onClick={() => scrollToSection('about')}
             className="hover:text-primary transition-colors"
           >
-            About
+            À propos
           </button>
           <button 
             onClick={() => scrollToSection('skills')}
             className="hover:text-primary transition-colors"
           >
-            Skills
+            Compétences
           </button>
           <button 
             onClick={() => scrollToSection('projects')}
             className="hover:text-primary transition-colors"
           >
-            Projects
+            Projets
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
@@ -47,7 +47,7 @@ export function Header() {
             Contact
           </button>
           <Button onClick={() => scrollToSection('contact')}>
-            Hire Me
+            Engagez-moi
           </Button>
         </nav>
 
@@ -70,19 +70,19 @@ export function Header() {
               onClick={() => scrollToSection('about')}
               className="text-left hover:text-primary transition-colors"
             >
-              About
+              À propos
             </button>
             <button 
               onClick={() => scrollToSection('skills')}
               className="text-left hover:text-primary transition-colors"
             >
-              Skills
+              Compétences
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
               className="text-left hover:text-primary transition-colors"
             >
-              Projects
+              Projets
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -91,7 +91,7 @@ export function Header() {
               Contact
             </button>
             <Button onClick={() => scrollToSection('contact')} className="self-start">
-              Hire Me
+              Engagez-moi
             </Button>
           </nav>
         </div>
