@@ -22,13 +22,13 @@ export function Hero() {
                 Bienvenue sur mon portfolio
               </span>
               <h1 className="mb-4">
-                Bonjour, Je m'appelle Olivier
+                Bonjour, je m'appelle Olivier
               </h1>
               <h2 className="text-muted-foreground mb-6">
                 Science des données | Intelligence Artificielle | Cybersécurité
               </h2>
               <p className="text-muted-foreground mb-8 max-w-lg">
-                Je suis étudiant au Baccalauréat en Science à l'Université de Sherbrooke 
+                Je suis étudiant au Baccalauréat en sciences à l'Université de Sherbrooke 
                 en Informatique de Gestion, programme coopératif.
 
               </p>
@@ -49,9 +49,6 @@ export function Hero() {
 
             {/* Social Links */}
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Github className="h-5 w-5" />
-              </Button>
               <Button variant="ghost" size="icon" className="hover:text-primary">
                 <Linkedin className="h-5 w-5" />
               </Button>

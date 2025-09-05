@@ -6,6 +6,15 @@ import { ImageWithFallback } from "./figma/ImageWithFallback"
 import { ExternalLink, Github } from "lucide-react"
 import { useState } from "react"
 
+// Import des images locales
+import img_masterexcel from '../img/img_masterexcel.jpg'
+import img_automatisationvisuelle from '../img/img_automatisationvisuelle.jpg'
+import img_excelvba from '../img/img_excelvba.jpg'
+import img_pixelbot from '../img/img_pixelbot.jpg'
+import img_solveursudoku from '../img/img_solveursudoku.jpg'
+import img_basededonnees from '../img/img_basededonnees.jpg'
+import img_structuresdonnees from '../img/img_structuresdonnees.jpg'
+
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null)
 
@@ -14,49 +23,49 @@ export function Projects() {
       title: "Master Excel",
       description: "Développement de projets avancés impliquant la consolidation de plus de 25 fichiers Excel avec tableaux de bord dynamiques et analyses automatisées.",
       detailedDescription: "Ce projet consistait à consolider et analyser des données provenant de multiples sources Excel. J'ai créé des tableaux de bord interactifs avec des graphiques dynamiques, des tableaux croisés dynamiques avancés, et des systèmes d'analyse automatisée pour optimiser les processus de reporting.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxleGNlbCUyMGRhdGF8ZW58MXx8fHwxNzU2OTM2OTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_masterexcel,
       technologies: ["Tableaux croisés dynamiques", "Dashboards", "VBA"]
     },
     {
       title: "Automation Visuelle",
       description: "Transforme les données CSV/Excel en graphiques visuels pour la chaîne de production d'usine avec génération automatique de diagrammes.",
       detailedDescription: "Application qui automatise la transformation de données de production en visualisations graphiques. Utilise Graphviz pour générer des diagrammes de flux de production en temps réel, permettant aux gestionnaires d'usine de visualiser instantanément l'état de leur chaîne de production.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw4fHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwxfHx8fDE3NTY5MzY5MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_automatisationvisuelle,
       technologies: ["HTML", "CSS", "Graphviz DOT", "JavaScript"]
     },
     {
       title: "Excel VBA",
       description: "Développement d'outils Excel automatisés avec interface utilisateur intégrée pour la sélection dynamique de fichiers et le traitement de données.",
       detailedDescription: "Suite d'outils VBA avancés avec interfaces utilisateur personnalisées. Inclut des systèmes de sélection de fichiers dynamiques, des macros d'automatisation de processus répétitifs, et l'intégration avec Python pour les analyses de données complexes.",
-      image: "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw3fHx2YmElMjBleGNlbHxlbnwxfHx8fDE3NTY5MzY5MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_excelvba,
       technologies: ["VBA", "Automation"]
     },
     {
       title: "PixelBot",
       description: "Automatise les tâches visuelles répétitives grâce à la reconnaissance d'images en temps réel avec système de raccourcis clavier personnalisés.",
       detailedDescription: "Bot d'automatisation avancé utilisant la reconnaissance d'images pour automatiser des tâches répétitives sur ordinateur. Système de configuration JSON flexible, détection d'images en temps réel, et intégration de raccourcis clavier personnalisés pour une utilisation optimale.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw2fHxhdXRvbWF0aW9uJTIwcm9ib3R8ZW58MXx8fHwxNzU2OTM2OTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_pixelbot,
       technologies: ["Python", "Automatisation", "JSON"]
     },
     {
       title: "Solveur de Sudoku",
       description: "Algorithme de résolution de Sudoku développé comme projet universitaire avec optimisations de performance avancées.",
       detailedDescription: "Implémentation d'un algorithme de résolution de Sudoku optimisé en C++. Utilise des techniques de backtracking avec optimisations heuristiques, capable de résoudre des grilles de difficulté variable en temps optimal. Projet développé dans le cadre de cours d'algorithmes avancés.",
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdWRva3V8ZW58MXx8fHwxNzU2OTM2OTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_solveursudoku,
       technologies: ["C++", "Algorithmes", "Projet Universitaire"]
     },
     {
       title: "Base de Données Relationnelle",
       description: "Conception et implémentation d'une base de données relationnelle complète pour une chaîne de restaurants avec optimisations de performance.",
       detailedDescription: "Projet complet de conception de base de données pour une chaîne de restaurants. Inclut la modélisation UML complète, l'implémentation PostgreSQL avec contraintes d'intégrité, les procédures stockées, et l'optimisation des requêtes pour de gros volumes de données.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhYmFzZXxlbnwxfHx8fDE3NTY5MzY5MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_basededonnees,
       technologies: ["PostgreSQL", "UML", "SQL"]
     },
     {
       title: "Structures de Données Avancées",
       description: "Implémentation complète de structures de données complexes from scratch incluant des optimisations de performance personnalisées.",
       detailedDescription: "Implémentation from scratch de structures de données avancées en C++: deques double-ended, skip lists avec probabilités optimisées, arbres binaires de recherche équilibrés. Chaque structure inclut des tests de performance et des optimisations mémoire spécifiques.",
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc3RydWN0dXJlfGVufDF8fHx8MTc1NjkzNjkzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      image: img_structuresdonnees,
       technologies: ["C++", "Algorithms", "Performance"]
     }
   ]
@@ -162,13 +171,6 @@ export function Projects() {
             <CarouselPrevious className="left-4" />
             <CarouselNext className="right-4" />
           </Carousel>
-        </div>
-
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            <Github className="h-4 w-4 mr-2" />
-            Voir tous mes projets sur GitHub
-          </Button>
         </div>
       </div>
     </section>

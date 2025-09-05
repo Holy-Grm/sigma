@@ -82,7 +82,7 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-muted-foreground text-sm">
-            © {currentYear} Olivier Germain. Tout droit réversé.
+            © {currentYear} Olivier Germain. Tout droits réversés.
           </div>
           
           

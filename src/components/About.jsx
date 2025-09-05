@@ -8,7 +8,7 @@ export function About() {
     {
       icon: Code,
       title: "Code",
-      description: "Programation propre et maintenable"
+      description: "Programmation propre et maintenable"
     },
     {
       icon: Palette,
@@ -60,7 +60,7 @@ export function About() {
       date: "2018 - 2022",
       title: "Gouvernement du Québec - Sûreté du Québec",
       subtitle: "Répartiteur d'appels d'urgence",
-      description: "Répartition d'appels policiers d'urgence .",
+      description: "Répartition d'appels policiers d'urgence.",
       type: "travail"
     },
     {
@@ -141,8 +141,6 @@ export function About() {
             <Timeline items={timelineItems} />
           </div>
         </div>
-
-
       </div>
     </section>
   )

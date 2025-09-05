@@ -15,7 +15,7 @@ export function Skills() {
             Technologies avec lesquelles je travaille
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            J'apprend en continue et j'améliore mes compétences sur des outils et technologies variés.
+            J'apprends en continue et j'améliore mes compétences sur des outils et technologies variés.
           </p>
         </div>
 
