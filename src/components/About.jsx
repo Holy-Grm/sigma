@@ -29,32 +29,46 @@ export function About() {
 
   const timelineItems = [
     {
-      date: "2024 - Présent",
+      date: "2024 - 2027",
       title: "Université de Sherbrooke",
-      subtitle: "Programme coopératif en informatique",
-      description: "Approfondissement des connaissances en informatique avec une approche pratique grâce au programme coopératif réputé.",
+      subtitle: "Baccalauréat en sciences - Informatique de gestion",
+      description: "Programme coopératif",
       type: "education"
     },
     {
-      date: "2023 - 2024",
-      title: "Stage en développement",
-      subtitle: "Entreprise technologique",
-      description: "Acquisition d'expérience pratique en développement d'applications et automatisation de processus complexes.",
-      type: "work"
+      date: "Été 2025",
+      title: "BRP",
+      subtitle: "Stagiaire aux processus et technologies d'exécution",
+      description: "Développement de solutions d'analyse de données pour l'optimisation manufacturière",
+      type: "stage"
     },
     {
-      date: "2022 - 2023",
-      title: "Projets personnels",
-      subtitle: "Développement autonome",
-      description: "Exploration de la domotique et automatisation, développement de solutions créatives pour divers défis techniques.",
-      type: "work"
+      date: "2022 - Aujourd'hui",
+      title: "Ville de Sherbrooke",
+      subtitle: "Répartiteur 911",
+      description: "Répartition d'urgence 911, police et incendie",
+      type: "travail"
     },
     {
-      date: "Début",
-      title: "Passion pour la technologie",
-      subtitle: "Autodidacte",
-      description: "Premiers pas dans la programmation avec les jeux vidéos, puis évolution vers l'automatisation et les projets complexes.",
+      date: "2018 - 2022",
+      title: "Gouvernement du Québec - Sûreté du Québec",
+      subtitle: "Répartiteur d'appels d'urgence",
+      description: "Répartition d'appels policiers d'urgence .",
+      type: "travail"
+    },
+    {
+      date: "2015 - 2018",
+      title: "CÉGEP de Saint-Laurent",
+      subtitle: "DEC en musique classique",
+      description: "Interprétation classique",
       type: "education"
+    },
+    {
+      date: "2012 - 2018",
+      title: "Service en restauration",
+      subtitle: "Emplois étudiants de service en restauration",
+      description: "Service à la clientèle",
+      type: "travail"
     }
   ]
 
