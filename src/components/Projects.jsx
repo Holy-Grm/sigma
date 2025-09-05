@@ -1,6 +1,5 @@
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
-import { Card, CardContent } from "./ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel"
 import { ImageWithFallback } from "./figma/ImageWithFallback"
@@ -84,28 +83,18 @@ export function Projects() {
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer transform hover:scale-[1.02] h-full">
+                      <div className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer transform hover:scale-[1.02] h-full bg-card text-card-foreground rounded-lg">
                         <div className="relative overflow-hidden">
                           <ImageWithFallback
                             src={project.image}
                             alt={project.title}
                             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                           />
-                          <div className="absolute top-4 left-4">
-                            <Badge variant="default" className="bg-green-600/90 text-white">
-                              {project.status}
-                            </Badge>
-                          </div>
-                          <div className="absolute top-4 right-4">
-                            <Badge variant="outline" className="bg-background/90 backdrop-blur-sm">
-                              {project.category}
-                            </Badge>
-                          </div>
                           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
                         </div>
                         
-                        <CardContent className="p-6">
-                          <h3 className="mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
+                        <div className="p-6">
+                          <h3 className="mb-3 group-hover:text-primary transition-colors font-semibold text-xl">{project.title}</h3>
                           <p className="text-muted-foreground text-sm mb-4 leading-relaxed line-clamp-3">
                             {project.description}
                           </p>
@@ -122,21 +111,13 @@ export function Projects() {
                               </Badge>
                             )}
                           </div>
-                        </CardContent>
-                      </Card>
+                        </div>
+                      </div>
                     </DialogTrigger>
                     
                     <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
                       <DialogHeader>
                         <DialogTitle className="text-2xl mb-2">{project.title}</DialogTitle>
-                        <div className="flex gap-2 mb-4">
-                          <Badge variant="default" className="bg-green-600">
-                            {project.status}
-                          </Badge>
-                          <Badge variant="outline">
-                            {project.category}
-                          </Badge>
-                        </div>
                       </DialogHeader>
                       
                       <div className="space-y-6">

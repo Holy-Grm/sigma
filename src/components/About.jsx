@@ -40,7 +40,7 @@ export function About() {
       title: "BRP",
       subtitle: "Stagiaire aux processus et technologies d'exécution",
       description: "Développement de solutions d'analyse de données pour l'optimisation manufacturière",
-      type: "stage"
+      type: "travail"
     },
     {
       date: "2022 - Aujourd'hui",
@@ -124,15 +124,13 @@ export function About() {
           </div>
         </div>
 
-        {/* Timeline Section */}
-        <div className="mt-20 pt-16 border-t border-border">
-          <div className="text-center mb-12">
-            <h3 className="mb-4">Mon Parcours</h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              De la passion autodidacte aux études spécialisées, découvrez les étapes clés de mon évolution dans le domaine technologique.
-            </p>
+        {/* Timeline Section - Full Height */}
+        <div className="mt-20 pt-8 border-t border-border">
+          <div className="text-center mb-8">
+            <h3 className="mb-4">Mon expérience</h3>
           </div>
-          <div className="max-w-4xl mx-auto">
+          {/* Timeline takes full available space - much taller for scroll effect */}
+          <div className="h-[200vh] min-h-[1200px]">
             <Timeline items={timelineItems} />
           </div>
         </div>
