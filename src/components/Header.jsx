@@ -47,7 +47,7 @@ export function Header() {
             Contact
           </button>
           <Button onClick={() => scrollToSection('contact')}>
-            Engagez-moi
+            Offrir un stage
           </Button>
         </nav>
 
@@ -91,7 +91,7 @@ export function Header() {
               Contact
             </button>
             <Button onClick={() => scrollToSection('contact')} className="self-start">
-              Engagez-moi
+              Offrir un stage
             </Button>
           </nav>
         </div>

@@ -29,7 +29,7 @@ export function Projects() {
     {
       title: "Automation Visuelle",
       description: "Transforme les données CSV/Excel en graphiques visuels pour la chaîne de production d'usine avec génération automatique de diagrammes.",
-      detailedDescription: "Application qui automatise la transformation de données de production en visualisations graphiques. Utilise Graphviz pour générer des diagrammes de flux de production en temps réel, permettant aux gestionnaires d'usine de visualiser instantanément l'état de leur chaîne de production.",
+      detailedDescription: "Application qui automatise la transformation de données de production en visualisations graphiques. Utilise Graphviz pour générer des diagrammes de flux de production en temps réel, permettant aux gestionnaires d'usine de visualiser instantanément le déroulement d'une chaîne de production.",
       image: img_automatisationvisuelle,
       technologies: ["HTML", "CSS", "Graphviz DOT", "JavaScript"]
     },
@@ -66,7 +66,7 @@ export function Projects() {
       description: "Implémentation complète de structures de données complexes from scratch incluant des optimisations de performance personnalisées.",
       detailedDescription: "Implémentation from scratch de structures de données avancées en C++: deques double-ended, skip lists avec probabilités optimisées, arbres binaires de recherche équilibrés. Chaque structure inclut des tests de performance et des optimisations mémoire spécifiques.",
       image: img_structuresdonnees,
-      technologies: ["C++", "Algorithms", "Performance"]
+      technologies: ["C++", "Algorithmes", "Performance"]
     }
   ]
 
